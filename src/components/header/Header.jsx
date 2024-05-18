@@ -32,6 +32,7 @@ const Header = () => {
                     <span></span>
                 </label>
                 <ul className={styles.menu__box}>
+                    <h3 className={styles.nameIn}>{name}</h3>
                     <li>
                         <Link
                             href="/"
@@ -59,6 +60,13 @@ const Header = () => {
                             className={styles.menu__item}>
                             Newsletter
                         </Link>
+                    </li>
+                    <li>
+                        <label
+                            className={styles.menu__btnIn}
+                            htmlFor={styles.menu__toggle}>
+                            <span>✖</span>
+                        </label>
                     </li>
                 </ul>
             </div>
